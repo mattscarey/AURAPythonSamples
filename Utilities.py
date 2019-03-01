@@ -153,6 +153,7 @@ class Utilities:
         return days
 
     def isMarketOpen(self):
+        #CST
         currTime = datetime.datetime.now().time()
         if currTime > datetime.time(hour=8, minute=30) and currTime < datetime.time(hour=15):
             return True
